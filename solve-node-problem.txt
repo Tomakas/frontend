@@ -1,0 +1,4 @@
+npm config set strict-ssl false
+
+export NODE_OPTIONS=--openssl-legacy-provider
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"> <!-- Default medium favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon16.png"> <!-- Default small favicon -->
+  <link rel="icon" type="image/png" sizes="196x196" href="/favicon196.png"> <!-- Android Chrome M31+ favicon -->
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- icons -->
+  <!-- <script src="https://kit.fontawesome.com/79c59ab447.js" crossorigin="anonymous"></script> -->
+    <link href="/fa/css/fontawesome.css" rel="stylesheet">
+    <link href="/fa/css/solid.css" rel="stylesheet">
+    <link href="/fa/css/regular.css" rel="stylesheet">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0FGY7GNKV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        if(localStorage.userId) {
+            gtag('config', 'G-D0FGY7GNKV', {
+                'user_id': localStorage.userId
+            });
+        } else {
+            gtag('config', 'G-D0FGY7GNKV');
+        }
+    </script>
+
+
+    <script
+          src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <!-- GoPay -->
+    <!-- <script type="text/javascript" src="https://gw.sandbox.gopay.com/gp-gw/js/embed.js"></script> -->
+    <script type="text/javascript" src="https://gate.gopay.cz/gp-gw/js/embed.js"></script>
+  <title>Elementary POS Back office</title>
+</head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
